@@ -67,6 +67,15 @@ Authentication design:
 
 ---
 
+## Architecture
+
+See architecture.md for detailed IAM design, including:
+- Identity vs permission separation
+- OIDC authentication flow
+- Role assumption model
+
+---
+
 ## Project Structure
 
 phase-2-iam/
@@ -74,6 +83,10 @@ phase-2-iam/
 ├── terraform/
 ├── docs/
 │   ├── iam-comparison.md
+│   ├── architecture.md
+│   ├── iam-debugging.md
+│   ├── oidc.md
+│   ├── oidc-debugging.md
 └── README.md
 
 ---
