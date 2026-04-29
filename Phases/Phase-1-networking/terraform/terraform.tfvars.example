@@ -1,0 +1,23 @@
+# Example variable values for Phase 1 - AWS Networking Fundamentals
+# Copy this file to terraform.tfvars for local customization.
+# Do not commit terraform.tfvars to GitHub.
+
+aws_region = "us-east-1"
+
+vpc_cidr = "10.0.0.0/20"
+
+public_subnet_az1_cidr = "10.0.0.0/24"
+public_subnet_az2_cidr = "10.0.1.0/24"
+
+private_app_subnet_az1_cidr = "10.0.2.0/24"
+private_app_subnet_az2_cidr = "10.0.3.0/24"
+
+private_db_subnet_az1_cidr = "10.0.4.0/24"
+private_db_subnet_az2_cidr = "10.0.5.0/24"
+
+common_tags = {
+  Project     = "cloud-foundations"
+  Phase       = "phase-1-networking"
+  Environment = "lab"
+  ManagedBy   = "terraform"
+}
